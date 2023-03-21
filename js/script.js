@@ -48,3 +48,23 @@ btnGenerate.addEventListener("click", function () {
   }
 );
 
+// Evento al click del pulsante Annulla
+
+let btnCanc = document.getElementById("cancel");
+btnCanc.addEventListener("click",
+  function () {
+      // sparizione parametri ticket
+      document.getElementById("name").value = "";
+      document.getElementById("km").value = "";
+      document.getElementById("age").value = "";
+
+      document.getElementById("nome-passegero").innerHTML = "";
+      document.getElementById("offerta").innerHTML = "";
+      document.getElementById("costo-biglietto").innerHTML = "";
+      document.getElementById("carrozza").innerHTML = "";
+      document.getElementById("codice-cp").innerHTML = "";
+
+      // sparizione sezione ticket
+      document.getElementById("main-bottom").className = "main-bottom hidden";
+  }
+);
