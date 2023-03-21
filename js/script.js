@@ -26,10 +26,10 @@ btnGenerate.addEventListener("click", function () {
       discountType = "Biglietto standard";
     }
 
-    // calcolo prezzo finale
+    // Calcolo prezzo finale
     let finalPrice = ticketPrice - discount;
 
-    // creazione dati biglietto in pagina
+    // Creazione dati biglietto in pagina
     document.getElementById("nome-passegero").innerHTML = passengerName;
     document.getElementById("offerta").innerHTML = discountType;
     document.getElementById("costo-biglietto").innerHTML = finalPrice.toFixed(2) + "€";
@@ -43,7 +43,7 @@ btnGenerate.addEventListener("click", function () {
     document.getElementById("codice-cp").innerHTML = cpCode;
     
     // Mostra ticket
-    document.getElementById("main-bottom").className = "main-bottom show";
+    document.getElementById("biglietto").className = "bottom-container show";
 
   }
 );
@@ -53,10 +53,10 @@ btnGenerate.addEventListener("click", function () {
 let btnCanc = document.getElementById("cancel");
 btnCanc.addEventListener("click",
   function () {
-      // sparizione parametri ticket
+      // Cancella parametri ticket
       document.getElementById("name").value = "";
       document.getElementById("km").value = "";
-      document.getElementById("age").value = "";
+      document.getElementById("age").value = "seleziona";
 
       document.getElementById("nome-passegero").innerHTML = "";
       document.getElementById("offerta").innerHTML = "";
@@ -64,7 +64,7 @@ btnCanc.addEventListener("click",
       document.getElementById("carrozza").innerHTML = "";
       document.getElementById("codice-cp").innerHTML = "";
 
-      // sparizione sezione ticket
-      document.getElementById("main-bottom").className = "main-bottom hidden";
+      // Cancella sezione ticket
+      document.getElementById("biglietto").className = "bottom-container hidden";
   }
 );
