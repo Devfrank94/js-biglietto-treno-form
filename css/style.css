@@ -20,9 +20,16 @@ body{
   padding: 20px 100px;
 }
 
+.test{
+  background-color: aqua;
+  border: 1px solid black;
+}
+
 
 
 /* Style Main */
+
+/* Parte superiore */
 #main-top {
   text-align: center;
 }
@@ -55,7 +62,7 @@ body{
 
 #main-top .top .data-top input,
 #main-top .top .data-top select {
-  padding:10px;
+  padding:10px 15px;
   border: 1px solid #B91450;
   border-radius:10px;
   text-align:center;
@@ -90,3 +97,68 @@ body{
   background-color: rgb(190, 190, 190);
   cursor: pointer;
 }
+
+/* /Parte superiore */
+
+/* Parte inferiore */
+#main-bottom h2 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#main-bottom h3{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.bottom-container {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+}
+
+/* Style Tabella */
+table {
+  height: 160px;
+}
+
+th,td {
+  text-align: left;
+  padding: 10px 30px;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.col.gray {
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+/* /Style Tabella */
+
+.row_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-top: 1px solid black;
+  border-bottom: 1px solid grey;
+}
+
+.padding {
+  padding: 10px 10px;
+}
+
+
+
+
+
+
+/* /Parte inferiore */
