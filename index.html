@@ -9,7 +9,40 @@
   <title>Biglietto treno form</title>
 </head>
 <body>
-  
+  <div class="container">
+
+    <!-- parte superiore -->
+    <section id="main-top">
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+        <div class="top">
+            <div class="data-top">
+                <label for="name">Nome e Cognome</label>
+                <input id="name" type="text" placeholder="Es. Nome e Cognome">
+            </div>
+            
+            <div class="data-top">
+                <label for="km">Km da percorrere</label>
+                <input id="km" type="number" placeholder="Es. 34">
+            </div>
+            
+            <div class="data-top">
+                <label for="age">Fascia d'età</label>
+                <select name="" id="age">
+                    <option value="seleziona" disabled selected>-Seleziona qui-</option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+                </select>
+            </div>
+            
+            <div class="buttons">
+                <button id="generate" class="btn">Genera</button>
+                <button id="cancel" class="btn">Annulla</button>
+            </div>
+            
+        </div>
+    </section>
+     <!-- /parte superiore -->
 
 
 
