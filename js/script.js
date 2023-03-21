@@ -26,6 +26,18 @@ btnGenerate.addEventListener("click", function () {
       discountType = "Biglietto standard";
     }
 
+    // calcolo prezzo finale
+    let finalPrice = ticketPrice - discount;
+
+    // creazione dati biglietto in pagina
+    document.getElementById("nome-passegero").innerHTML = passengerName;
+    document.getElementById("offerta").innerHTML = discountType;
+    document.getElementById("costo-biglietto").innerHTML = finalPrice.toFixed(2) + "€";
+    
+    // Genera numero carrozza casuale
+    let wagonNumber = Math.floor(Math.random() * 9) + 1;
+    document.getElementById("carrozza").innerHTML = wagonNumber;
+
 
   }
 )
