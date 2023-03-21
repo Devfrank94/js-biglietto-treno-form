@@ -38,6 +38,13 @@ btnGenerate.addEventListener("click", function () {
     let wagonNumber = Math.floor(Math.random() * 9) + 1;
     document.getElementById("carrozza").innerHTML = wagonNumber;
 
+    // Genera cp-code
+    let cpCode = Math.floor(Math.random() * 10000) + 90000;
+    document.getElementById("codice-cp").innerHTML = cpCode;
+    
+    // Mostra ticket
+    document.getElementById("main-bottom").className = "main-bottom show";
 
   }
-)
+);
+
