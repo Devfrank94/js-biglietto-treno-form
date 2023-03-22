@@ -70,7 +70,9 @@ body{
 
 #main-top .top .data-top input:focus,
 #main-top .top .data-top select:focus {
-  outline: none;
+  outline-color: rgb(75, 75, 255);
+  background-color: #B91450;
+  color: #fff;
 }
 
 #main-top .top .buttons {
