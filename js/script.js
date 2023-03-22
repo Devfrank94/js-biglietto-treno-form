@@ -57,13 +57,7 @@ btnCanc.addEventListener("click",
       document.getElementById("name").value = "";
       document.getElementById("km").value = "";
       document.getElementById("age").value = "seleziona";
-
-      document.getElementById("nome-passegero").innerHTML = "";
-      document.getElementById("offerta").innerHTML = "";
-      document.getElementById("costo-biglietto").innerHTML = "";
-      document.getElementById("carrozza").innerHTML = "";
-      document.getElementById("codice-cp").innerHTML = "";
-
+      
       // Cancella sezione ticket
       document.getElementById("biglietto").className = "bottom-container hidden";
   }
